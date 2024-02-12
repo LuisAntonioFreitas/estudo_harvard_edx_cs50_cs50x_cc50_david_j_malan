@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
+void print_block(int qtd);
 int get_beetwen_int(int initial, int finaly);
 
 int main(void)
@@ -13,12 +14,19 @@ int main(void)
           {
                printf(" ");
           }
-          for(int j = 1; j <= i; j++)
-          {
-               printf("#");
-          }
+          print_block(i);
+          printf("  ");
+          print_block(i);
           printf("\n");
      }
+}
+
+void print_block(int qtd)
+{
+    for(int j = 1; j <= qtd; j++)
+    {
+        printf("#");
+    }
 }
 
 int get_beetwen_int(int initial, int finaly)
