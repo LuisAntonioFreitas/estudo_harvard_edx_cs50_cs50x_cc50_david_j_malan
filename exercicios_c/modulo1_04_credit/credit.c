@@ -118,7 +118,7 @@ int verify_mastercard(long n)
     int verify = 0;
     sprintf(cc, "%ld", n);
     if(strlen(cc) == 16) {
-        if(cc[0] - '0' == 5 && (cc[1] - '0' >= 1 || cc[1] - '0' <= 5)) {
+        if(cc[0] - '0' == 5 && (cc[1] - '0' >= 1 && cc[1] - '0' <= 5)) {
             verify = 1;
         }
     }

@@ -7,7 +7,7 @@ float get_valid_float(void);
 int main(void)
 {
     float cents = get_valid_float();
-    cents = cents - ((int) cents);
+    // cents = cents - ((int) cents);
     int result = round(cents * 100);
 
     int count25 = 0;
