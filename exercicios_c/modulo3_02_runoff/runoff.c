@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 // Max voters and candidates
 #define MAX_VOTERS 100
@@ -147,12 +148,11 @@ void tabulate(void)
     {
         for (int j = 0; j < candidate_count; j++)
         {
-            if ( preferences[i][0] == j ) {
-                if (!candidates[j].eliminated)
-                {
-                    candidates[j].votes++;
-                    break;
-                }
+            int candidateIndex = preferences[i][j];
+            if (!candidates[candidateIndex].eliminated)
+            {
+                candidates[candidateIndex].votes++;
+                break;
             }
         }
     }
@@ -162,43 +162,15 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-
-    // for (int i = 0; i < candidate_count; i++)
-    // {
-    //     printf("%i\n", candidates[i].votes > voter_count / 2);
-    //     if (candidates[i].votes > voter_count / 2)
-    //     {
-    //         printf("%s\n", candidates[i].name);
-    //         return true;
-    //     }
-    // }
-    // return false;
-
-    int maxVote = 0;
+    int maxVote = round(voter_count / 2);
     for (int i = 0; i < candidate_count; i++)
     {
-        if ( !candidates[i].eliminated && candidates[i].votes > maxVote )
+        if (candidates[i].votes > maxVote)
         {
-            maxVote = candidates[i].votes;
+            printf("%s\n", candidates[i].name);
+            return true;
         }
     }
-
-    int index[MAX_CANDIDATES];
-    int indexCount = 0;
-    for (int i = 0; i < candidate_count; i++)
-    {
-        if ( candidates[i].votes == maxVote ) {
-            index[indexCount++] = i;
-        }
-    }
-
-    for (int i = 0; i < indexCount; i++)
-    {
-        printf("%s\n", candidates[index[i]].name);
-    }
-    printf("---\n");
-    if ( indexCount == 1 ) { return true; }
-
     return false;
 }
 

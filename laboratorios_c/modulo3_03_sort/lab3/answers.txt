@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: observing the times, I identified this type of slow ordering
+
+sort2 uses: merge sort
+
+How do you know?: observing the times, I identified this type of quick ordering
+
+sort3 uses: selection sort
+
+How do you know?: observing the times, I identified this type of average ordering
