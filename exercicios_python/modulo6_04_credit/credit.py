@@ -3,8 +3,8 @@ import re
 
 def main():
     n = get_string_number()
-    c = coins(n)
-    print(c)
+    card = coins(n)
+    print(card)
 
 def coins(n):
     cents = round(n * 100)
