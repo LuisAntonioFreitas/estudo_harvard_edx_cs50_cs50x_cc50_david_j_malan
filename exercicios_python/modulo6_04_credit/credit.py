@@ -4,26 +4,13 @@ import re
 def main():
     n = get_string_number()
 
-    if(is_valid_number(n) == 0):
+    if is_valid_number(n):
+        print(verify_card_type(n))
+    else:
         print("INVALID")
-    } else {
-        if(verify_visa(n) == 1) {
-            printf("VISA\n");
-        } else if(verify_mastercard(n) == 1) {
-            printf("MASTERCARD\n");
-        } else if(verify_amex(n) == 1) {
-            printf("AMEX\n");
-        } else {
-            printf("INVALID\n");
-        }
-    }
-
-
-    card = coins(n)
-    print(card)
 
 def is_valid_number(n):
-    # Algoritmo de Luhn
+    # algoritmo de Luhn
     total = 0
     for i, digit in enumerate(reversed(n), start=1):
         if i % 2 == 0:
@@ -33,7 +20,7 @@ def is_valid_number(n):
             total += int(digit)
     return total % 10 == 0
 
-def coins(n):
+def verify_card_type(n):
     cents = round(n * 100)
     coins = 0
 
