@@ -28,5 +28,4 @@ def count_words(text):
 def count_sentences(text):
     return sum(c in '.!?' for c in text)
 
-if __name__ == "__main__":
-    main()
+main()
