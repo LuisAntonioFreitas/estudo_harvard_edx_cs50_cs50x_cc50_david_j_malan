@@ -1,4 +1,5 @@
 from cs50 import get_string
+import re
 
 def main():
     n = get_float_change_owed()
@@ -18,7 +19,7 @@ def coins(n):
 def get_float_change_owed():
     while True:
         n = get_string("Number: ")
-        if n >= 0:
+        if re.match(r'^([\s\d]+)$', n) >= 0:
             break
     return n
 
