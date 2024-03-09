@@ -3,8 +3,35 @@ import re
 
 def main():
     n = get_string_number()
+
+    if(verify_numbers(n) == 0) {
+        printf("INVALID\n");
+    } else {
+        if(verify_visa(n) == 1) {
+            printf("VISA\n");
+        } else if(verify_mastercard(n) == 1) {
+            printf("MASTERCARD\n");
+        } else if(verify_amex(n) == 1) {
+            printf("AMEX\n");
+        } else {
+            printf("INVALID\n");
+        }
+    }
+
+
     card = coins(n)
     print(card)
+
+def is_valid(number):
+    # Algoritmo de Luhn
+    total = 0
+    for i, digit in enumerate(reversed(number), start=1):
+        if i % 2 == 0:
+            doubled = int(digit) * 2
+            total += doubled if doubled < 10 else doubled - 9
+        else:
+            total += int(digit)
+    return total % 10 == 0
 
 def coins(n):
     cents = round(n * 100)
