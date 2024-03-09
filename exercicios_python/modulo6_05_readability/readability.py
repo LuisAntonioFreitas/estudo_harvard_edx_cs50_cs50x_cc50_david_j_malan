@@ -1,7 +1,7 @@
 from cs50 import get_string
 
 def main():
-    text = get_string("Text: ")
+    text = get_string_text()
     letters = count_letters(text)
     words = count_words(text)
     sentences = count_sentences(text)
@@ -27,5 +27,12 @@ def count_words(text):
 
 def count_sentences(text):
     return sum(c in '.!?' for c in text)
+
+def get_string_text():
+    while True:
+        t = get_string("Text: ")
+        if ( len(t) > 0 ):
+            break
+    return t
 
 main()
