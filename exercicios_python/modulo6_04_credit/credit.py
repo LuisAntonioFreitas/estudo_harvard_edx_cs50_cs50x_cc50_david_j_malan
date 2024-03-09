@@ -19,7 +19,7 @@ def coins(n):
 def get_string_number():
     while True:
         n = get_string("Number: ")
-        if re.match(r'^([\s\d]+)$', n) >= 0:
+        if re.match(r'^([\s\d]+)$', n) != "":
             break
     return n
 
