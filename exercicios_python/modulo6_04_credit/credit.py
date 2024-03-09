@@ -9,7 +9,7 @@ def main():
     else:
         print("INVALID")
 
-def is_valid_number(n):
+def is_valid_number(n) -> bool:
     # # algoritmo de Luhn
     # total = 0
     # for i, digit in enumerate(reversed(n), start=1):
