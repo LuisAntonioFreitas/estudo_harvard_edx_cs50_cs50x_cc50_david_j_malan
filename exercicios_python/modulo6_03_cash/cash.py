@@ -1,4 +1,4 @@
-from cs50 import get_string
+from cs50 import get_float
 
 def main():
     n = get_float_change_owed()
@@ -17,7 +17,7 @@ def coins(n):
 
 def get_float_change_owed():
     while True:
-        n = get_string("Number: ")
+        n = get_float("Change owed: ")
         if n >= 0:
             break
     return n
