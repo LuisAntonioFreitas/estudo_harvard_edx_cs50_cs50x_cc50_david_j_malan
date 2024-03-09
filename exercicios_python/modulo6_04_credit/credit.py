@@ -4,8 +4,8 @@ import re
 def main():
     n = get_string_number()
 
-    if(verify_numbers(n) == 0) {
-        printf("INVALID\n");
+    if(is_valid_number(n) == 0):
+        print("INVALID")
     } else {
         if(verify_visa(n) == 1) {
             printf("VISA\n");
@@ -22,10 +22,10 @@ def main():
     card = coins(n)
     print(card)
 
-def is_valid(number):
+def is_valid_number(n):
     # Algoritmo de Luhn
     total = 0
-    for i, digit in enumerate(reversed(number), start=1):
+    for i, digit in enumerate(reversed(n), start=1):
         if i % 2 == 0:
             doubled = int(digit) * 2
             total += doubled if doubled < 10 else doubled - 9
