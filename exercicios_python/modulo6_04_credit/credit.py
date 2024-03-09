@@ -1,6 +1,6 @@
 from cs50 import get_string
 import re
-from luhn import *
+#from luhn import *
 
 def main():
     n = get_string_number()
