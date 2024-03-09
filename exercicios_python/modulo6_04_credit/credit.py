@@ -2,7 +2,7 @@ from cs50 import get_string
 import re
 
 def main():
-    n = get_float_change_owed()
+    n = get_string_number()
     c = coins(n)
     print(c)
 
@@ -16,7 +16,7 @@ def coins(n):
 
     return coins
 
-def get_float_change_owed():
+def get_string_number():
     while True:
         n = get_string("Number: ")
         if re.match(r'^([\s\d]+)$', n) >= 0:
