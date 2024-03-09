@@ -11,6 +11,8 @@ def main():
         print("INVALID")
 
 def is_valid_number(n) -> bool:
+    return verify(n)
+
     # # algoritmo de Luhn
     # total = 0
     # for i, digit in enumerate(reversed(n), start=1):
@@ -20,32 +22,33 @@ def is_valid_number(n) -> bool:
     #     else:
     #         total += int(digit)
     # return total % 10 == 0
-    # 1. Change datatype to list[int]
-    card_number = [int(num) for num in n]
 
-    # 2. Remove the last digit:
-    checkDigit = card_number.pop(-1)
+    # # 1. Change datatype to list[int]
+    # card_number = [int(num) for num in n]
 
-    # 3. Reverse the remaining digits:
-    card_number.reverse()
+    # # 2. Remove the last digit:
+    # checkDigit = card_number.pop(-1)
 
-    # 4. Double digits at even indices
-    card_number = [num * 2 if idx % 2 == 0
-                   else num for idx, num in enumerate(card_number)]
+    # # 3. Reverse the remaining digits:
+    # card_number.reverse()
 
-    # 5. Subtract 9 at even indices if digit is over 9
-    # (or you can add the digits)
-    card_number = [num - 9 if idx % 2 == 0 and num > 9
-                   else num for idx, num in enumerate(card_number)]
+    # # 4. Double digits at even indices
+    # card_number = [num * 2 if idx % 2 == 0
+    #                else num for idx, num in enumerate(card_number)]
 
-    # 6. Add the checkDigit back to the list:
-    card_number.append(checkDigit)
+    # # 5. Subtract 9 at even indices if digit is over 9
+    # # (or you can add the digits)
+    # card_number = [num - 9 if idx % 2 == 0 and num > 9
+    #                else num for idx, num in enumerate(card_number)]
 
-    # 7. Sum all digits:
-    checkSum = sum(card_number)
+    # # 6. Add the checkDigit back to the list:
+    # card_number.append(checkDigit)
 
-    # 8. If checkSum is divisible by 10, it is valid.
-    return checkSum % 10 == 0
+    # # 7. Sum all digits:
+    # checkSum = sum(card_number)
+
+    # # 8. If checkSum is divisible by 10, it is valid.
+    # return checkSum % 10 == 0
 
 def verify_card_type(n):
     cents = round(n * 100)
