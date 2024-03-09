@@ -14,14 +14,14 @@ def is_valid_number(n):
     return verify(n)
 
 def verify_card_type(n):
-    cents = round(n * 100)
-    coins = 0
-
-    for coin in [25, 10, 5, 1]:
-        coins += cents // coin
-        cents %= coin
-
-    return coins
+    length = len(n)
+    if (length == 15 and n.startswith(('34', '37'))):
+        return "AMEX"
+    elif (length == 16 and n.startswith(('51', '52', '53', '54', '55'))):
+        return "MASTERCARD"
+    elif (length in [13, 16] and n.startswith('4')):
+        return "VISA"
+    return "INVALID"
 
 def get_string_number():
     while True:
