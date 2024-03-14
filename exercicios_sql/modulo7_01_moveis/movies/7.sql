@@ -3,4 +3,9 @@
 --Sua consulta deve gerar uma tabela com duas colunas, uma para o título de cada filme e outra para a classificação de cada filme.
 --Filmes sem classificação não devem ser incluídos no resultado.
 
-SELECT  
+SELECT  title, rating
+FROM    movies
+JOIN    ratings
+        ON  movies.id = ratings.movie_id
+WHERE   ( year = 2010 )
+ORDER BY rating;
