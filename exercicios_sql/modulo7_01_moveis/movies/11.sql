@@ -13,4 +13,4 @@ JOIN    people
 JOIN    ratings
         ON  movies.id = ratings.movie_id
 WHERE   ( people.name = 'Chadwick Boseman' )
-ORDER BY ;
+ORDER BY ratings.rating;
