@@ -4,4 +4,11 @@
 --Não precisa se preocupar com pessoas que não têm ano de nascimento listado, desde que aqueles que têm ano de nascimento estejam listados em ordem.
 --Se uma pessoa apareceu em mais de um filme em 2004, ela só deve aparecer uma vez nos resultados.
 
-SELECT  
+SELECT  people.name
+FROM    people
+JOIN    stars
+        ON people.id = stars.person_id
+JOIN    movies
+        ON stars.movie_id = movies.id
+WHERE   ( movies.year = 2004 )
+ORDER BY people.brth
