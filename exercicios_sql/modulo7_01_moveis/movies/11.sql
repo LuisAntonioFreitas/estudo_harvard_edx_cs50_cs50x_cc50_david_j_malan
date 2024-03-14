@@ -3,4 +3,7 @@
 --Sua consulta deve gerar uma tabela com uma única coluna para o título de cada filme.
 --Você pode presumir que há apenas uma pessoa no banco de dados com o nome Chadwick Boseman.
 
-SELECT
+SELECT TOP 5
+        title
+FROM    movies
+WHERE   (  )
