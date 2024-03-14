@@ -2,4 +2,10 @@
 --Sua consulta deve gerar uma tabela com uma única coluna para o nome de cada pessoa.
 --Você pode presumir que há apenas um filme no banco de dados com o título Toy Story.
 
-SELECT  
+SELECT  people.title
+FROM    people
+JOIN    stars
+        ON people.id = stars.person_id
+JOIN    movies
+        ON stars.movie_id = movies.id
+WHERE   ( movies.title = 'Toy Story' );
