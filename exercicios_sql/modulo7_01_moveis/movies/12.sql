@@ -10,4 +10,4 @@ JOIN    stars
 JOIN    people
         ON  stars.person_id = people.id
 WHERE   ( people.name IN ('Johnny Depp', 'Helena Bonham Carter') );
-
+HAVING  COUNT(DISTINCT people.name) = 2;
