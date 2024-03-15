@@ -4,12 +4,13 @@
 --O próprio Kevin Bacon não deve ser incluído na lista resultante.
 
 SELECT DISTINCT
-        people.name
+        p1.name
 FROM    movies
 JOIN    stars
         ON  movies.id = stars.movie_id
-JOIN    people
-        ON  stars.person_id = people.id
-WHERE   ( people.name IN ('Kevin Bacon') )
-GROUP BY movies.id
-HAVING  COUNT(DISTINCT people.name) = 2;
+JOIN    people p1
+        ON  stars.person_id = p1.id
+JOIN    people p2
+        ON  stars.person_id = p2.id
+WHERE   ( p2.name IN ('Kevin Bacon') )
+AND     ( NOT p1.name IN ('Kevin Bacon') );
