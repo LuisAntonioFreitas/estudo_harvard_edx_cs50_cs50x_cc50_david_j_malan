@@ -3,12 +3,14 @@
 --Pode haver várias pessoas chamadas Kevin Bacon no banco de dados. Certifique-se de selecionar apenas Kevin Bacon nascido em 1958.
 --O próprio Kevin Bacon não deve ser incluído na lista resultante.
 
-SELECT 
+SELECT
         p2.name
-FROM    stars
-JOIN    people p1
-        ON  stars.person_id = p1.id
+FROM    stars AS s1
+JOIN    stars AS s2
+        ON s1.movie_id = s2.movie_id
+JOIN    people AS p1
+        ON  s1.person_id = p1.id
         AND p1.name IN ('Kevin Bacon')
-JOIN    people p2
-        ON  stars.person_id = p2.id
+JOIN    people AS p2
+        ON  s2.person_id = p2.id
         AND NOT p2.name IN ('Kevin Bacon');
