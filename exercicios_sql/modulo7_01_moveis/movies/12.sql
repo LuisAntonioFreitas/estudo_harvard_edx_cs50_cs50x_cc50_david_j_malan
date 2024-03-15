@@ -9,5 +9,6 @@ JOIN    stars
         ON  movies.id = stars.movie_id
 JOIN    people
         ON  stars.person_id = people.id
-WHERE   ( people.name = 'Johnny Depp' )
+WHERE   ( )
+AND     ( people.name IN 'Johnny Depp' )
 AND     ( people.name = 'Helena Bonham Carter' );
