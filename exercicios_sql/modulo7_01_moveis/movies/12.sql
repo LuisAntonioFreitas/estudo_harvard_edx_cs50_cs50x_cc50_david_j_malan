@@ -3,4 +3,11 @@
 --Você pode presumir que há apenas uma pessoa no banco de dados com o nome Johnny Depp.
 --Você pode presumir que há apenas uma pessoa no banco de dados com o nome Helena Bonham Carter.
 
-SELECT  
+SELECT  title
+FROM    movies
+JOIN    stars
+        ON  movies.id = stars.movie_id
+JOIN    people
+        ON  stars.person_id = people.id
+WHERE   ( people.name = 'Johnny Depp' )
+AND     ( people.name = 'Helena Bonham Carter' );
