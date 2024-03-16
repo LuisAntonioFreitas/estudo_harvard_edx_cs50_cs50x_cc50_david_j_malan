@@ -2,4 +2,6 @@
 --Músicas que apresentam outros artistas incluirão “feat.” no nome da música.
 --Sua consulta deve gerar uma tabela com uma única coluna para o nome de cada música.
 
-SELECT
+SELECT  name
+FROM    songs
+WHERE   ( name LIKE '%feat.%' );
