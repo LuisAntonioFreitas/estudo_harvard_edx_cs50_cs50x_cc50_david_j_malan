@@ -2,4 +2,8 @@
 --Sua consulta deve gerar uma tabela com uma única coluna e uma única linha contendo a energia média.
 --Você não deve fazer suposições sobre qual é o artist_id de Drake.
 
-SELECT
+SELECT  AVG(songs.energy)
+FROM    songs
+JOIN    artists
+        ON songs.artist_id = artists.id
+WHERE   ( artists.name = 'Drake' );
