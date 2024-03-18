@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Inter, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -27,13 +27,6 @@ main {
     flex: 1;
 }
 
-footer {
-    font-size: 0.8em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
 header {
     margin-bottom: 2em;
 }
@@ -52,20 +45,28 @@ section {
     margin-bottom: 2em;
 }
 
+footer {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 .signature {
     display: flex;
     justify-content: center;
     width: 100%;
+
     font-size: 0.8rem;
-  }
-  .signature a {
+}
+.signature a {
     font-size: 0.9rem;
-    font-weight: 400;
+    color: #000;
     text-decoration-line: none;
+
     cursor: pointer;
     transition: 0.3s;
-  }
-  .signature a:hover {
-    color: var(--color-font-hover-signature);
+}
+.signature a:hover {
     font-weight: 600;
-  }
+}
