@@ -14,7 +14,7 @@
                 // Multiple choice question
                 document.querySelectorAll('.multiple-choice button').forEach(button => {
                     button.onclick = function() {
-                        const correct = this.dataset.correct; // Assumes data-correct attribute exists
+                        const correct = this.dataset.correct; 
                         document.querySelectorAll('.multiple-choice button').forEach(btn => {
                             if(btn.dataset.correct === "true") {
                                 btn.style.backgroundColor = 'lightgreen';
@@ -36,9 +36,9 @@
                 // Free response question
                 document.querySelector('#free-response-submit').onclick = function() {
                     const input = document.querySelector('#free-response');
-                    const answer = input.value.trim().toLowerCase(); // Assumes the correct answer is "leonardo da vinci" in lowercase
+                    const answer = input.value.trim().toLowerCase();
                     const result = document.querySelector('#free-response-result');
-                    if (answer === "leonardo da vinci") {
+                    if (answer === "cristóvão colombo" || answer === "cristovao colombo" || answer === "cristovão colombo" || answer === "cristóvao colombo") {
                         input.style.backgroundColor = 'lightgreen';
                         result.textContent = "Correto!";
                         result.style.color = 'green';
