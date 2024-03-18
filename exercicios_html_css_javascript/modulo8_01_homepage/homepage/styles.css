@@ -12,7 +12,11 @@ body {
 header, footer {
     background-color: #f0f0f0;
     text-align: center;
-    padding: 1rem;
+    padding: 0.8rem;
+}
+
+nav {
+    margin-top: 20px;
 }
 
 nav ul {
@@ -26,7 +30,7 @@ nav ul li {
 }
 
 main {
-    padding: 1rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
     flex: 1;
 }
 
@@ -45,7 +49,7 @@ nav ul li a:hover {
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 footer {
