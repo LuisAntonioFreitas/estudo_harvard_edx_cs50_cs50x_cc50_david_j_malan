@@ -10,7 +10,7 @@ body {
 }
 
 header, footer {
-    background-color: #FFFAFA;
+    background-color: #00BFFF;
     text-align: center;
     padding: 0.8rem;
 }
@@ -39,13 +39,14 @@ header {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #D3D3D3;
 }
 
 section {
@@ -73,6 +74,7 @@ footer {
 .signature a {
     font-size: 0.9rem;
     color: #000;
+    text-decoration: none;
     text-decoration-line: none;
 
     cursor: pointer;
