@@ -41,12 +41,13 @@ header {
 nav ul li a {
     color: #333;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
     text-decoration: none;
     text-decoration-line: none;
-    color: #1E90FF;
+    color: #778899;
 }
 
 section {
