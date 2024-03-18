@@ -22,16 +22,16 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 1em;
+    margin: 0 1rem;
 }
 
 main {
-    padding: 1em;
+    padding: 1rem;
     flex: 1;
 }
 
 header {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 nav ul li a {
@@ -45,7 +45,7 @@ nav ul li a:hover {
 }
 
 section {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 footer {
@@ -60,7 +60,7 @@ footer {
     justify-content: center;
     width: 100%;
 
-    padding: 20px 20px 20px 0;
+    padding: 20px 0 20px 0;
 
     font-family: Roboto, sans-serif;
     font-size: 0.8rem;
