@@ -33,8 +33,23 @@
                     };
                 });
 
+                // Free response question
+                document.querySelector('#free-response-submit').onclick = function() {
+                    const input = document.querySelector('#free-response');
+                    const answer = input.value.trim().toLowerCase(); // Assumes the correct answer is "leonardo da vinci" in lowercase
+                    const result = document.querySelector('#free-response-result');
+                    if (answer === "leonardo da vinci") {
+                        input.style.backgroundColor = 'lightgreen';
+                        result.textContent = "Correto!";
+                        result.style.color = 'green';
+                    } else {
+                        input.style.backgroundColor = 'lightcoral';
+                        result.textContent = "Incorreto.";
+                        result.style.color = 'red';
+                    }
+                };
 
-            }
+            });
 
         </script>
 
