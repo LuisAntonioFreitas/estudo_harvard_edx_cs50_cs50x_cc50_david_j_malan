@@ -12,7 +12,7 @@ body {
 header, footer {
     background-color: #f0f0f0;
     text-align: center;
-    padding: 1em;
+    padding: 1rem;
 }
 
 nav ul {
@@ -60,7 +60,7 @@ footer {
     justify-content: center;
     width: 100%;
 
-    padding: 20px;
+    padding: 20px 20px 20px 0;
 
     font-family: Roboto, sans-serif;
     font-size: 0.8rem;
