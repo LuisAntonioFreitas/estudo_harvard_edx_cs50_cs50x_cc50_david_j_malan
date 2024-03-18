@@ -11,7 +11,28 @@
             // TODO: Add code to check answers to questions
             document.addEventListener("DOMContentLoaded", function() {
 
-                
+                // Multiple choice question
+                document.querySelectorAll('.multiple-choice button').forEach(button => {
+                    button.onclick = function() {
+                        const correct = this.dataset.correct; // Assumes data-correct attribute exists
+                        document.querySelectorAll('.multiple-choice button').forEach(btn => {
+                            if(btn.dataset.correct === "true") {
+                                btn.style.backgroundColor = 'lightgreen';
+                            } else {
+                                btn.style.backgroundColor = 'lightcoral';
+                            }
+                        });
+                        const result = document.querySelector('#multiple-choice-result');
+                        if (correct === "true") {
+                            result.textContent = "Correto!";
+                            result.style.color = 'green';
+                        } else {
+                            result.textContent = "Incorreto.";
+                            result.style.color = 'red';
+                        }
+                    };
+                });
+
 
             }
 
