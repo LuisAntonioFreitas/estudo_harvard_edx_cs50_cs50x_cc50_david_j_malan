@@ -2,7 +2,7 @@
 
 body {
     font-family: Inter, sans-serif;
-    
+
     background-color: #fff;
     color: #212529;
     font-size: 1rem;
@@ -42,6 +42,8 @@ h1 {
 }
 
 button, input[type="submit"] {
+    cursor: pointer;
+    
     background-color: #d9edff;
     border: 1px solid transparent;
     border-radius: 0.25rem;
