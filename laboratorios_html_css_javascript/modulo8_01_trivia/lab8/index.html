@@ -14,7 +14,7 @@
                 // Multiple choice question
                 document.querySelectorAll('.multiple-choice button').forEach(button => {
                     button.onclick = function() {
-                        const correct = this.dataset.correct; 
+                        const correct = this.dataset.correct;
                         document.querySelectorAll('.multiple-choice button').forEach(btn => {
                             if(btn.dataset.correct === "true") {
                                 btn.style.backgroundColor = 'lightgreen';
@@ -68,9 +68,9 @@
 
                 <!-- TODO: Add multiple choice question here -->
                 <h3>Quem descobriu o Brasil?</h3>
-                <button data-correct="false">Cristóvão Colombo</button>
-                <button data-correct="true">Pedro Álvares Cabral</button>
-                <button data-correct="false">Vasco da Gama</button>
+                <button data-correct="false" class="multiple-choice">Cristóvão Colombo</button>
+                <button data-correct="true" class="multiple-choice">Pedro Álvares Cabral</button>
+                <button data-correct="false" class="multiple-choice">Vasco da Gama</button>
                 <p id="multiple-choice-result"></p>
 
             </div>
