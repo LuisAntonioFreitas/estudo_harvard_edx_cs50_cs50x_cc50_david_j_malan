@@ -12,10 +12,10 @@
             document.addEventListener("DOMContentLoaded", function() {
 
                 // Multiple choice question
-                document.querySelectorAll('multiple-choice button').forEach(button => {
+                document.querySelectorAll('#multiple-choice').forEach(button => {
                     button.onclick = function() {
                         const correct = this.dataset.correct;
-                        document.querySelectorAll('multiple-choice button').forEach(btn => {
+                        document.querySelectorAll('#multiple-choice').forEach(btn => {
                             if(btn.dataset.correct === "true") {
                                 btn.style.backgroundColor = 'lightgreen';
                             } else {
