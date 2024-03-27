@@ -117,12 +117,18 @@ def buy():
         flash("Transaction successful!")
         return redirect("/")
 
-
+# HISTORY
 @app.route("/history")
 @login_required
 def history():
     """Show history of transactions"""
-    return apology("TODO")
+    # return apology("TODO")
+    user_id = session["user_id"]
+    transactions_db = db.execute(
+        "SELECT * FROM transactions WHERE user_id = :id", id=user_id
+    )
+    # return history template
+    return render_template("history.html", transactions=transactions_db)
 
 
 # LOGIN
