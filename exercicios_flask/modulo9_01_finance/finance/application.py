@@ -37,11 +37,14 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///finance.db")
 
+# CS50
+# iexcloud.io/cloud-login#/register/
+# $ export API_KEY=value
+
 # Make sure API key is set
 if not os.environ.get("API_KEY"):
     raise RuntimeError("API_KEY not set")
 
-# iexcloud.io/cloud-login#/register/
 
 @app.route("/")
 @login_required
