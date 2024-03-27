@@ -67,6 +67,7 @@ def history():
     return apology("TODO")
 
 
+# LOGIN
 @app.route("/login", methods=["GET", "POST"])
 def login():
     """Log user in"""
@@ -103,6 +104,7 @@ def login():
         return render_template("login.html")
 
 
+
 @app.route("/logout")
 def logout():
     """Log user out"""
@@ -112,6 +114,7 @@ def logout():
 
     # Redirect user to login form
     return redirect("/")
+
 
 
 @app.route("/quote", methods=["GET", "POST"])
@@ -166,12 +169,12 @@ def sell():
     return apology("TODO")
 
 
+# ERROR
 def errorhandler(e):
     """Handle error"""
     if not isinstance(e, HTTPException):
         e = InternalServerError()
     return apology(e.name, e.code)
-
 
 # Listen for errors
 for code in default_exceptions:
