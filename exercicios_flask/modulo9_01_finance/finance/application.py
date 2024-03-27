@@ -41,6 +41,7 @@ db = SQL("sqlite:///finance.db")
 if not os.environ.get("API_KEY"):
     raise RuntimeError("API_KEY not set")
 
+# iexcloud.io/cloud-login#/register/
 
 @app.route("/")
 @login_required
