@@ -117,7 +117,7 @@ def login():
         return render_template("login.html")
 
 
-
+# LOGOUT
 @app.route("/logout")
 def logout():
     """Log user out"""
