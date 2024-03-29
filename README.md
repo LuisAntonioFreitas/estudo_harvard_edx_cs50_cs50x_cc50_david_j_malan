@@ -56,7 +56,7 @@
 
 <h4 align="center">
 
-  *Certificado*  
+  *Certificado* 
 </h4>
 
 ![screenshot](https://raw.githubusercontent.com/LuisAntonioFreitas/estudo_harvard_edx_cs50_cs50x_cc50_david_j_malan/main/assets/readme/certificado_harvard_cc50_brasil.png)
