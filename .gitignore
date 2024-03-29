@@ -1,0 +1,39 @@
+# # Ignore everything
+# *
+
+# # But don't ignore folders
+# !*/
+
+# # But do ignore these folders
+# node_modules/
+# vendor/
+# temp/
+
+# # But don't ignore these files
+# !/.devcontainer.json
+# !/.vscode/settings.json
+
+# # But don't ignore these types of files
+# !*.c
+# !*.cpp
+# !*.css
+# !*.db
+# !*.h
+# !*.html
+# !*.java
+# !*.js
+# !*.md
+# !*.py
+# !*.R
+# !*.sql
+# !*.ts
+# !*.txt
+# !Makefile
+
+# # Ignore files larger than 100M
+
+# Ignore
+.vscode/
+node_modules/
+vendor/
+temp/
