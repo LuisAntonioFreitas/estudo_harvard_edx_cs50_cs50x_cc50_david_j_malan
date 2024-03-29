@@ -68,7 +68,7 @@
 
 > **Nota**
 >
-> * Curso de alta qualidade, muito bem elaborado. Consegue apresentar assuntos diversos que se complementam e nos inserem em vários seguimentos. Mostrando infinitas possibilidades. 
+> * Curso de alta qualidade, muito bem elaborado e ministrado por David J. Malan. Consegue apresentar assuntos diversos que se complementam e nos inserem em vários seguimentos. Mostrando infinitas possibilidades. 
 
 ---
 
@@ -90,8 +90,8 @@
 
 ## ⭐ Créditos<a id="credits"></a>
 
-* [CS50 | Introduction to Computer Science](https://cs50.harvard.edu/x/2024/)
-* [edX | CS50 | Computer Science Courses and Programs from Harvard](https://www.edx.org/cs50)
+* [CS50 | edX | Computer Science Courses and Programs from Harvard](https://www.edx.org/cs50)
+* [CS50x | Introduction to Computer Science](https://cs50.harvard.edu/x/2024/)
 * [Harvard University](https://www.harvard.edu/)
 * [Fundação Estudar](https://www.estudar.org.br/)
 * [Na Prática](https://www.napratica.org.br/)
