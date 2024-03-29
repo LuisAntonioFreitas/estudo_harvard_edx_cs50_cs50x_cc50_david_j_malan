@@ -8,7 +8,9 @@
             width="150px" height="auto" 
             style="border:5px;border-style:solid;border-color:white;border-radius:50%;"></a>
     </div>
-    CS50|CS50x|CC50
+    HARVARD | edX
+    <br>
+    CS50 | CS50x | CC50
     <br>
     Introduction to Computer Science
     <br>
@@ -46,12 +48,10 @@
 </p>
 
 <p align="center">
-  <a href="#recursos">Recursos</a> •
-  <a href="#funcionamento">Funcionamento</a> •
-  <a href="#desafio">Desafio</a> •
-  <a href="#download">Download</a> •
-  <a href="#creditos">Créditos</a> •
-  <a href="#licenca">Licença</a>
+  <a href="#description">Descrição</a> •
+  <a href="#contents">Conteúdo</a> •
+  <a href="#credits">Créditos</a> •
+  <a href="#license">Licença</a>
 </p>
 
 <h4 align="center">
@@ -62,85 +62,44 @@
 ![screenshot](https://raw.githubusercontent.com/LuisAntonioFreitas/estudo_harvard_edx_cs50_cs50x_cc50_david_j_malan/main/assets/readme/certificado_harvard_cc50_brasil.png)
 ![screenshot](https://raw.githubusercontent.com/LuisAntonioFreitas/estudo_harvard_edx_cs50_cs50x_cc50_david_j_malan/main/assets/readme/certficate_harvard_cs50.png)
 
-## 📋 Recursos<a id="recursos"></a>
+## 🧭 Descrição<a id="description"></a>
 
-* Criptografa e descriptografa textos.
+* É um curso educacional de ciência da computação oferecido pela Universidade de Harvard que apresenta os conceitos intelectuais da ciência da computação e da arte da programação. Este curso ensina os alunos a pensar algoritmicamente e resolver problemas com eficiência.
 
 > **Nota**
 >
-> * Só são aceitas letras minúsculas e sem acentos ou caracteres especiais.
-> * Botão para copiar o texto resultante, facilitando o manuseio em criptografias ou descriptografias.
-> * Design totalmente responsivo, adaptando-se em desktops, tablets e celulares.
-> * Modo de tema Dark/Light disponível.
+> * Curso de alta qualidade, muito bem elaborado. Consegue apresentar assuntos diversos que se complementam e nos inserem em vários seguimentos. Mostrando infinitas possibilidades. 
 
 ---
 
-## 🧭 Funcionamento<a id="funcionamento"></a>
+## 📋 Conteúdo<a id="contents"></a>
 
-* Basta digitar o texto na área indicada e escolher entre criptografar ou descriptografar nos botões abaixo. 
-
-<!-- ```bash
-# Clone this repository
-$ git clone https://github.com/LuisAntonioFreitas/repository
-
-# Go into the repository
-$ cd repository
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
-
-> **Nota**
-> É possível acompanhar esse passo-a-passo, [neste guia](https://www/) ou usar o `node` via prompt de comando. -->
+* 0 | Scratch (Introdução)
+* 1 | C (Introdução)
+* 2 | C - Arrays (Matrizes)
+* 3 | C - Algoritmos (Algoritmos e Métodos de Pesquisa)
+* 4 | C - Memória
+* 5 | C - Estrutura de Dados (Hash)
+* 6 | Python (Introdução e Explanação sobre Python)
+* 7 | SQL (Apresentação da Linguagem de Banco de Dados)
+* 8 | HTML, CSS, JavaScript (Introdução para Web)
+* 9 | Flask (Ligando a Web ao Banco de Dados)
+* 10 | Ética (Responsabilidade)
 
 ---
 
-## 🏅 Desafio<a id="desafio"></a>
+## ⭐ Créditos<a id="credits"></a>
 
-* Deve funcionar apenas com letras minúsculas.
-* Não devem ser utilizados letras com acentos nem caracteres especiais.
-* Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
-* A página deve ter campos para inserção do texto a ser criptografado ou descriptografado, e a pessoa usuária deve poder escolher entre as duas opções.
-* O resultado deve ser exibido na tela.
-* As "chaves" de criptografia que utilizaremos são:  
-A letra "e" é convertida para "enter"  
-A letra "i" é convertida para "imes"  
-A letra "a" é convertida para "ai"  
-A letra "o" é convertida para "ober"  
-A letra "u" é convertida para "ufat"  
-* Descubra qual é a nossa mensagem secreta:  
-**"pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!"**
-* **Extras**  
-  * Um botão que copie o texto criptografado/descriptografado para a área de transferência - ou seja, que tenha a mesma funcionalidade do <kbd>ctrl+C</kbd> ou da opção "copiar" do menu dos aplicativos.
-  * Rodapé com informações do desenvolvedor. 
-  * Utilize o que aprendeu sobre Git e GitHub e publique sua página utilizando o serviço GitHub Pages. Dessa forma, você pode compartilhar o resultado do seu projeto.
-
-> **Bônus Adicionados e Observações**
->
-> * Modo de tema Dark/Light adicionado.
-> * CSS trabalhado para tornar totalmente responsivo, adaptando-se em desktops, tablets e celulares.
-> * Botões com efeitos de cliques e ícones com animações para tornar a experiência do usuário a mais agradável possível. 
-> * Design respeitando o arquivo figma e seguindo as cores e os padrões utilizados. 
+* [CS50 | Introduction to Computer Science](https://cs50.harvard.edu/x/2024/)
+* [edX | CS50 | Computer Science Courses and Programs from Harvard](https://www.edx.org/cs50)
+* [Harvard University](https://www.harvard.edu/)
+* [Fundação Estudar](https://www.estudar.org.br/)
+* [Na Prática](https://www.napratica.org.br/)
+* [CC50 | Curso de Ciência da Computação de Harvard no Brasil](https://materiais.napratica.org.br/cc50)
 
 ---
 
-## 🔽 Download<a id="download"></a>
-Faça [download](https://codeload.github.com/LuisAntonioFreitas/estudo_alura_oracle_one_challenge_spring01_decodificador_de_texto_javascript/zip/refs/heads/master) dos arquivos do repositório.  
-O arquivo [figma](https://raw.githubusercontent.com/LuisAntonioFreitas/estudo_alura_oracle_one_challenge_spring01_decodificador_de_texto_javascript/master/alura_challenge_desafio_1_logica.fig) e também o guia em [PDF](https://raw.githubusercontent.com/LuisAntonioFreitas/estudo_alura_oracle_one_challenge_spring01_decodificador_de_texto_javascript/master/alura_challenge_decodificador_vfinal_4.pdf) do desafio estão disponíveis.
-
----
-
-## ⭐ Créditos<a id="creditos"></a>
-
-* [Oracle One](https://www.oracle.com/br/education/oracle-next-education/)
-* [Alura](https://www.alura.com.br/)
-
----
-
-## ©️ Licença<a id="licenca"></a>
+## ©️ Licença<a id="license"></a>
 
 MIT
 
